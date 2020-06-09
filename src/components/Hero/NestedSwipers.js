@@ -1,9 +1,7 @@
 import React from 'react'
 import Swiper from 'react-id-swiper';
-import placeholder from '../../images/gatsby-astronaut.png'
 import { TiHtml5 } from 'react-icons/ti'
 import { FaCss3Alt, FaReact } from 'react-icons/fa'
-
 import 'swiper/css/swiper.css';
 import '../Hero/NestedSwipers.css';
 

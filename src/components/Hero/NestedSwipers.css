@@ -1,3 +1,7 @@
+:root {
+  --swiper-theme-color: white;
+}
+
 .swiper-container {
     /* outline: red dotted 1px; */
     width: 100%;
@@ -10,8 +14,8 @@
     align-items: center;
   }
 
-  .swiper-container-v {
-    color: green;
+  .swiper-container-vertical {
+    /* color: green; */
   }
 
   svg {
