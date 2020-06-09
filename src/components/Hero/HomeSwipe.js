@@ -10,8 +10,8 @@ h2 {
 }
 svg {
     margin-top: 3rem;
-    transform: rotateX(180deg);
     font-size: 3rem;
+    transform: rotateX(180deg);
 }
 `
 

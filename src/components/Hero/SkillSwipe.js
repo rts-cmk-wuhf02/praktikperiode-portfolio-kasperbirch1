@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 const StyledSkillSwipe = styled.article`
     svg {
-        font-size: 5rem;
+        font-size: 6rem;
     }
     h2 {
         font-size: 2rem;
