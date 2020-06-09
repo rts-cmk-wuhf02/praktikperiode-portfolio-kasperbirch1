@@ -5,10 +5,15 @@
   }
   .swiper-slide {
     text-align: center;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .swiper-container-v {
     color: green;
+  }
+
+  svg {
+    font-size: 8rem;;
   }

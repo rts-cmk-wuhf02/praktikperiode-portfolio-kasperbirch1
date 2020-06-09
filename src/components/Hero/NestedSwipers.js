@@ -1,6 +1,8 @@
 import React from 'react'
 import Swiper from 'react-id-swiper';
 import placeholder from '../../images/gatsby-astronaut.png'
+import { TiHtml5 } from 'react-icons/ti'
+import { FaCss3Alt, FaReact } from 'react-icons/fa'
 
 import 'swiper/css/swiper.css';
 import '../Hero/NestedSwipers.css';
@@ -21,34 +23,30 @@ const NestedSwipers = () => {
     };
     return (
         <Swiper {...HorizontalSwiperParams}>
-            <section style={{ backgroundImage: 'url("https://images.pexels.com/photos/459653/pexels-photo-459653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-                <article>
-                    <h2>Hej</h2>
+            <section>
+                <article style={{ padding: '2rem' }}>
+                    <h2>Kasper Birch</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum minima non perspiciatis sequi, amet facere quisquam quos deserunt ducimus, voluptates magni! Nesciunt unde atque totam quasi quas nisi adipisci rem?</p>
                 </article>
             </section>
-            <section style={{ backgroundImage: 'url("https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <section>
                 <Swiper {...VerticalSwiperParams}>
                     <section>
                         <article>
-                            <h2>Hej</h2>
+                            <TiHtml5 />
+                            <h2>Html</h2>
                         </article>
                     </section>
                     <section>
                         <article>
-                            <img style={{ width: '100%' }} src={placeholder} alt="test" />
-                            <h2>Hej</h2>
+                            <FaCss3Alt />
+                            <h2>CSS</h2>
                         </article>
                     </section>
                     <section>
                         <article>
-                            <img style={{ width: '100%' }} src={placeholder} alt="test" />
-                            <h2>Hej</h2>
-                        </article>
-                    </section>
-                    <section>
-                        <article>
-                            <h2>Hej</h2>
-                            <img style={{ width: '100%' }} src={placeholder} alt="test" />
+                            <FaReact />
+                            <h2>React</h2>
                         </article>
                     </section>
                 </Swiper>
