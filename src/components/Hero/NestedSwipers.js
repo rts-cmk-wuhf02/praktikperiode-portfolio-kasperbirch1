@@ -22,7 +22,7 @@ const NestedSwipers = () => {
         }
     };
     return (
-        <Swiper {...HorizontalSwiperParams}>
+        <Swiper>
             <section>
                 <HomeSwipe />
             </section>
