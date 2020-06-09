@@ -26,9 +26,9 @@ const NestedSwipers = () => {
                     <h2>Hej</h2>
                 </article>
             </section>
-            <section>
+            <section style={{ backgroundImage: 'url("https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <Swiper {...VerticalSwiperParams}>
-                    <section style={{ backgroundImage: 'url("https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+                    <section>
                         <article>
                             <h2>Hej</h2>
                         </article>
