@@ -21,34 +21,38 @@ const NestedSwipers = () => {
     };
     return (
         <Swiper {...HorizontalSwiperParams}>
-            <div>
-                <img style={{ width: '100%' }} src={placeholder} alt="test" />
-            </div>
-            <div>
+            <section style={{ backgroundImage: 'url("https://images.pexels.com/photos/459653/pexels-photo-459653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+                <article>
+                    <h2>Hej</h2>
+                </article>
+            </section>
+            <section>
                 <Swiper {...VerticalSwiperParams}>
-                    <div>
-                        <img style={{ width: '100%' }} src={placeholder} alt="test" />
-                    </div>
-                    <div>
-                        <img style={{ width: '100%' }} src={placeholder} alt="test" />
-                    </div>
-                    <div>
-                        <img style={{ width: '100%' }} src={placeholder} alt="test" />
-                    </div>
-                    <div>
-                        <img style={{ width: '100%' }} src={placeholder} alt="test" />
-                    </div>
+                    <section style={{ backgroundImage: 'url("https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+                        <article>
+                            <h2>Hej</h2>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <img style={{ width: '100%' }} src={placeholder} alt="test" />
+                            <h2>Hej</h2>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <img style={{ width: '100%' }} src={placeholder} alt="test" />
+                            <h2>Hej</h2>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <h2>Hej</h2>
+                            <img style={{ width: '100%' }} src={placeholder} alt="test" />
+                        </article>
+                    </section>
                 </Swiper>
-            </div>
-            <div>
-                <img style={{ width: '100%' }} src={placeholder} alt="test" />
-            </div>
-            <div>
-                <img style={{ width: '100%' }} src={placeholder} alt="test" />
-            </div>
-            <div>
-                <img style={{ width: '100%' }} src={placeholder} alt="test" />
-            </div>
+            </section>
         </Swiper>
     )
 }
