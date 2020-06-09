@@ -30,11 +30,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+    <>
       <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
       <main>{children}</main>
       <Footer siteSlogan={data.site.siteMetadata.slogan} />
-    </div>
+    </>
   )
 }
 

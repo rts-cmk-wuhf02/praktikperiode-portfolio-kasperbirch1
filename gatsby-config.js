@@ -12,7 +12,7 @@ module.exports = {
       },
       {
         name: 'about',
-        link: '/about'
+        link: '/page-2'
       },
       {
         name: 'kb-develop',
