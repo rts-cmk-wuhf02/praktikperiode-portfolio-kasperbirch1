@@ -41,7 +41,7 @@ const DesktopNavMenu = ({ siteTitle, menuLinks }) => {
 
 export default DesktopNavMenu
 
-const StyledHeader = styled.header`
+const StyledHeader = styled.nav`
   display: none;
   @media ${breakpoints.sm} {
     width: 100%;

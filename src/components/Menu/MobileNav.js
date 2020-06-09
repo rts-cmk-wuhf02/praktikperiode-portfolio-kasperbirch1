@@ -52,7 +52,7 @@ const MobileNavMenu = ({ siteTitle, menuLinks }) => {
 
 export default MobileNavMenu
 
-const MenuBar = styled.header`
+const MenuBar = styled.nav`
   @media ${breakpoints.sm} {
     display: none;
   }
