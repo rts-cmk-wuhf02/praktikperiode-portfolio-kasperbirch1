@@ -1,4 +1,4 @@
-# Kasper Birch var her.
+# https://kb-development.netlify.app/
 # praktikperiode-portfolio
 
 ![lets get ready](https://github.com/rts-cmk-opgaver/praktikperiode-portfolio/blob/master/lets-get-ready-to-rumble.jpg "lets get ready")
