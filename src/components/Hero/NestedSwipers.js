@@ -1,5 +1,6 @@
 import React from 'react'
 import Swiper from 'react-id-swiper';
+import placeholder from '../../images/gatsby-astronaut.png'
 
 import 'swiper/css/swiper.css';
 import '../Hero/NestedSwipers.css';
@@ -20,18 +21,34 @@ const NestedSwipers = () => {
     };
     return (
         <Swiper {...HorizontalSwiperParams}>
-            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In a ullam aspernatur sed ratione rerum animi neque. Culpa et excepturi architecto eveniet velit magni odio esse ut iste recusandae libero aliquam quibusdam aliquid a, similique, dolor labore voluptates. Facere provident quas voluptatibus molestiae harum dignissimos corrupti debitis, qui doloremque ad.</div>
+            <div>
+                <img style={{ width: '100%' }} src={placeholder} alt="test" />
+            </div>
             <div>
                 <Swiper {...VerticalSwiperParams}>
-                    <div>Vertical #1</div>
-                    <div>Vertical #2</div>
-                    <div>Vertical #3</div>
-                    <div>Vertical #4</div>
+                    <div>
+                        <img style={{ width: '100%' }} src={placeholder} alt="test" />
+                    </div>
+                    <div>
+                        <img style={{ width: '100%' }} src={placeholder} alt="test" />
+                    </div>
+                    <div>
+                        <img style={{ width: '100%' }} src={placeholder} alt="test" />
+                    </div>
+                    <div>
+                        <img style={{ width: '100%' }} src={placeholder} alt="test" />
+                    </div>
                 </Swiper>
             </div>
-            <div>Horizontal #2</div>
-            <div>Horizontal #3</div>
-            <div>Horizontal #4</div>
+            <div>
+                <img style={{ width: '100%' }} src={placeholder} alt="test" />
+            </div>
+            <div>
+                <img style={{ width: '100%' }} src={placeholder} alt="test" />
+            </div>
+            <div>
+                <img style={{ width: '100%' }} src={placeholder} alt="test" />
+            </div>
         </Swiper>
     )
 }
