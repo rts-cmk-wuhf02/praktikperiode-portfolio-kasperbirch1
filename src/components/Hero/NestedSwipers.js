@@ -1,5 +1,7 @@
 import React from 'react'
 import Swiper from 'react-id-swiper';
+import HomeSwipe from './HomeSwipe'
+import SkillSwipe from './SkillSwipe'
 import { TiHtml5 } from 'react-icons/ti'
 import { FaCss3Alt, FaReact } from 'react-icons/fa'
 import 'swiper/css/swiper.css';
@@ -22,30 +24,18 @@ const NestedSwipers = () => {
     return (
         <Swiper {...HorizontalSwiperParams}>
             <section>
-                <article style={{ padding: '2rem' }}>
-                    <h2>Kasper Birch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum minima non perspiciatis sequi, amet facere quisquam quos deserunt ducimus, voluptates magni! Nesciunt unde atque totam quasi quas nisi adipisci rem?</p>
-                </article>
+                <HomeSwipe />
             </section>
             <section>
                 <Swiper {...VerticalSwiperParams}>
                     <section>
-                        <article>
-                            <TiHtml5 />
-                            <h2>Html</h2>
-                        </article>
+                        <SkillSwipe icon={<TiHtml5 />} title="Html" />
                     </section>
                     <section>
-                        <article>
-                            <FaCss3Alt />
-                            <h2>CSS</h2>
-                        </article>
+                        <SkillSwipe icon={<FaCss3Alt />} title="CSS" />
                     </section>
                     <section>
-                        <article>
-                            <FaReact />
-                            <h2>React</h2>
-                        </article>
+                        <SkillSwipe icon={<FaReact />} title="React" />
                     </section>
                 </Swiper>
             </section>

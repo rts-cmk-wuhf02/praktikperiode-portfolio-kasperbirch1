@@ -7,6 +7,7 @@
     width: 100%;
     height: 100vh;
   }
+
   .swiper-slide {
     text-align: center;
     display: flex;
@@ -18,6 +19,7 @@
     /* color: green; */
   }
 
-  svg {
-    font-size: 8rem;;
+  .swiper-pagination-bullet {
+    /* background: green ; */
   }
+
