@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 const StyledFooter = styled.footer`
+    height: 3rem;
     padding: 1rem;
     background-color: black;
     color: white;

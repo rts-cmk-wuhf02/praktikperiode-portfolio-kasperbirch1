@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
-      <main>{children}</main>
+      <main >{children}</main>
       <Footer siteSlogan={data.site.siteMetadata.slogan} />
     </>
   )
