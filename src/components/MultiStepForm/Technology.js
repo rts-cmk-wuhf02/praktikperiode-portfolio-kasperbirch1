@@ -31,7 +31,7 @@ const Technology = ({ setForm, navigation }) => {
                     <GrGatsbyjs />
                 </label>
                 <label htmlFor="React">
-                    <input name="technology" id="React " type="radio" value={"React "} onClick={setForm} />
+                    <input name="technology" id="React" type="radio" value={"React"} onClick={setForm} />
                     <GrReactjs />
                 </label>
                 <label htmlFor="Wordpress">
