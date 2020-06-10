@@ -10,9 +10,10 @@ const Contact = ({ setForm, formData, navigation }) => {
 
   return (
     <StyledForm>
-      <h3>Contact </h3>
-      <ItemForm label="Phone" name="phone" value={phone} onChange={setForm} />
-      <ItemForm label="E-mail" name="email" value={email} onChange={setForm} />
+      <label>phone</label>
+      <input type="tel" name="phone" id="phone" value={phone} onChange={setForm} />
+      <label>email</label>
+      <input type="email" name="email" id="email" value={email} onChange={setForm} />
       <StyledButtonsContainer>
         <button onClick={previous}>Previous</button>
         <button onClick={next}>Next</button>

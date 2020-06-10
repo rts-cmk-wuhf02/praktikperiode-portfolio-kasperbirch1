@@ -9,22 +9,10 @@ const Names = ({ setForm, formData, navigation }) => {
 
   return (
     <StyledForm>
-      <label>
-        firstName
-      </label>
+      <label>firstName</label>
       <input type="text" name="firstName" id="firstName" value={firstName} onChange={setForm} />
-      <label>
-        Email
-      </label>
-      <input type="email" name="email" id="email" />
-      <label>
-        Subject
-      </label>
-      <input type="text" name="subject" id="subject" />
-      <label>
-        Message
-      </label>
-      <textarea name="message" id="message" rows="5" />
+      <label>lastName</label>
+      <input type="text" name="lastName" id="lastName" value={lastName} onChange={setForm} />
       <StyledButtonsContainer>
         <button onClick={previous}>Previous</button>
         <button onClick={next}>Next</button>

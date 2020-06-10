@@ -24,7 +24,7 @@ const Technology = ({ setForm, navigation }) => {
 
     return (
         <StyledForm>
-            <h2>Vælg teknologi</h2>
+            <h3>Vælg teknologi</h3>
             <ExtraFormStyle>
                 <label>
                     <input name="technology" id="Gatsby" type="radio" value={"Gatsby"} onClick={setForm} />

@@ -18,16 +18,14 @@ const steps = [
 ];
 
 const defaultData = {
-    firstName: "Jane",
-    lastName: "Doe",
-    nickName: "Jan",
-    address: "200 South Main St",
-    city: "Anytown",
-    state: "CA",
-    zip: "90505",
-    email: "email@domain.com",
-    phone: "+61 4252 454 332",
-    technology: "use technology"
+    technology: "",
+    firstName: "",
+    lastName: "",
+    address: "",
+    city: "",
+    zip: "",
+    email: "",
+    phone: ""
 };
 
 const MultiStepForm = ({ images }) => {
