@@ -11,12 +11,8 @@ module.exports = {
         link: '/'
       },
       {
-        name: 'about',
-        link: '/page-2'
-      },
-      {
-        name: 'kb-develop',
-        link: '/kb-develop'
+        name: 'Portfolio',
+        link: '/portfolio'
       },
       {
         name: 'contact',
@@ -64,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`cambay\:400,700`, `arvo\:400,700`, `ubuntu mono\:400,700`],
+        fonts: [`cambay\:400,700`, `arvo\:400,700`, `ubuntu mono\:400,700`, `Metal Mania\:400,700`],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

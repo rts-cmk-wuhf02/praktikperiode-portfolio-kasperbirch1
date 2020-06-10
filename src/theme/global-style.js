@@ -19,7 +19,7 @@ export const theme = {
   },
   font: {
     sans: "Cambay, sans-serif",
-    serif: "Arvo, serif",
+    serif: "Metal Mania, serif",
     monospace: '"Ubuntu Mono", monospace',
   },
   lineHeight: {
