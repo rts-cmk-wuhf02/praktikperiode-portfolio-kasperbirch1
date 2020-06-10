@@ -10,3 +10,9 @@ export const StyledForm = styled.form`
         margin-bottom: 2rem;
     }
 `
+
+export const StyledButtonsContainer = styled.div`
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+`

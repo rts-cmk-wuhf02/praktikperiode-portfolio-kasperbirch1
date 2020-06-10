@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledForm } from "./StyledForm";
+import { StyledForm, StyledButtonsContainer } from "./StyledForm";
 
 const Names = ({ setForm, formData, navigation }) => {
   const { firstName, lastName, nickName } = formData;
@@ -25,8 +25,10 @@ const Names = ({ setForm, formData, navigation }) => {
         Message
       </label>
       <textarea name="message" id="message" rows="5" />
-      <button onClick={previous}>Previous</button>
-      <button onClick={next}>Next</button>
+      <StyledButtonsContainer>
+        <button onClick={previous}>Previous</button>
+        <button onClick={next}>Next</button>
+      </StyledButtonsContainer>
     </StyledForm>
   );
 };

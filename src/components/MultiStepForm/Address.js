@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledForm } from "./StyledForm";
+import { StyledForm, StyledButtonsContainer } from "./StyledForm";
 
 
 import ItemForm from "./ItemForm";
@@ -22,10 +22,10 @@ const Address = ({ setForm, formData, navigation }) => {
       <ItemForm label="City" name="city" value={city} onChange={setForm} />
       <StateDrop label="State" name="state" value={state} onChange={setForm} />
       <ItemForm label="Zip" name="zip" value={zip} onChange={setForm} />
-      <div>
+      <StyledButtonsContainer>
         <button onClick={previous}>Previous</button>
         <button onClick={next}>Next</button>
-      </div>
+      </StyledButtonsContainer>
     </StyledForm>
   );
 };

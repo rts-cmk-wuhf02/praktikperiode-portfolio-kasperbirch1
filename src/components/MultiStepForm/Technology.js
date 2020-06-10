@@ -1,6 +1,6 @@
 import React from 'react'
 import { GrGatsbyjs, GrWordpress, GrReactjs } from 'react-icons/gr'
-import { StyledForm } from "./StyledForm";
+import { StyledForm, StyledButtonsContainer } from "./StyledForm";
 import styled from 'styled-components'
 const ExtraFormStyle = styled.div`
     display: flex;
@@ -39,7 +39,9 @@ const Technology = ({ setForm, navigation }) => {
                     <GrWordpress />
                 </label>
             </ExtraFormStyle>
-            <button onClick={next}>Next</button>
+            <StyledButtonsContainer>
+                <button style={{ gridColumn: '1/-1' }} onClick={next}>Next</button>
+            </StyledButtonsContainer>
         </StyledForm>
     )
 }

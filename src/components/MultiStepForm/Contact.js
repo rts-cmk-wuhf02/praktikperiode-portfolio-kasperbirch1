@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledForm } from "./StyledForm";
+import { StyledForm, StyledButtonsContainer } from "./StyledForm";
 
 import ItemForm from "./ItemForm";
 
@@ -13,10 +13,10 @@ const Contact = ({ setForm, formData, navigation }) => {
       <h3>Contact </h3>
       <ItemForm label="Phone" name="phone" value={phone} onChange={setForm} />
       <ItemForm label="E-mail" name="email" value={email} onChange={setForm} />
-      <div>
+      <StyledButtonsContainer>
         <button onClick={previous}>Previous</button>
         <button onClick={next}>Next</button>
-      </div>
+      </StyledButtonsContainer>
     </StyledForm>
   );
 };
