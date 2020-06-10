@@ -8,12 +8,12 @@ import 'swiper/css/swiper.css';
 import '../Hero/NestedSwipers.css';
 
 const NestedSwipers = () => {
-    const HorizontalSwiperParams = {
-        pagination: {
-            el: '.swiper-pagination.swiper-pagination-h',
-            clickable: true
-        }
-    };
+    // const HorizontalSwiperParams = {
+    //     pagination: {
+    //         el: '.swiper-pagination.swiper-pagination-h',
+    //         clickable: true
+    //     }
+    // };
     const VerticalSwiperParams = {
         direction: 'vertical',
         pagination: {

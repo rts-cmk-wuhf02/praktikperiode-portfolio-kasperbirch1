@@ -26,15 +26,15 @@ const Technology = ({ setForm, navigation }) => {
         <StyledForm>
             <h3>Vælg teknologi</h3>
             <ExtraFormStyle>
-                <label>
+                <label htmlFor="Gatsby">
                     <input name="technology" id="Gatsby" type="radio" value={"Gatsby"} onClick={setForm} />
                     <GrGatsbyjs />
                 </label>
-                <label>
+                <label htmlFor="React">
                     <input name="technology" id="React " type="radio" value={"React "} onClick={setForm} />
                     <GrReactjs />
                 </label>
-                <label>
+                <label htmlFor="Wordpress">
                     <input name="technology" id="Wordpress" type="radio" value={"Wordpress"} onClick={setForm} />
                     <GrWordpress />
                 </label>

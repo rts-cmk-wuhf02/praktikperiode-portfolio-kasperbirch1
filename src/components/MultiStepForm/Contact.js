@@ -1,8 +1,6 @@
 import React from "react";
 import { StyledForm, StyledButtonsContainer } from "./StyledForm";
 
-import ItemForm from "./ItemForm";
-
 const Contact = ({ setForm, formData, navigation }) => {
   const { phone, email } = formData;
 
@@ -10,9 +8,9 @@ const Contact = ({ setForm, formData, navigation }) => {
 
   return (
     <StyledForm>
-      <label>phone</label>
+      <label htmlFor="phone">phone</label>
       <input type="tel" name="phone" id="phone" value={phone} onChange={setForm} />
-      <label>email</label>
+      <label htmlFor="email">email</label>
       <input type="email" name="email" id="email" value={email} onChange={setForm} />
       <StyledButtonsContainer>
         <button onClick={previous}>Previous</button>
