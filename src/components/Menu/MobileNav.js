@@ -28,7 +28,9 @@ const MobileNavMenu = ({ siteTitle, menuLinks }) => {
   return (
     <MenuBar background={background}>
       <MenuIconContainer>
-        <H1>{siteTitle}</H1>
+        <Link to="/">
+          <H1>{siteTitle}</H1>
+        </Link>
         {menuOpen ?
           <AiOutlineMenuUnfold style={{ zIndex: '11', fontSize: '1.5rem', color: 'black' }} onClick={() => toggleMenuOpen(!menuOpen)} />
           :
@@ -73,6 +75,11 @@ const MenuIconContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 `
 
 const MenuLinks = styled.nav`

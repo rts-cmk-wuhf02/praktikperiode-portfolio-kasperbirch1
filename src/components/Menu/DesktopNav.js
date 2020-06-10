@@ -25,7 +25,9 @@ const DesktopNavMenu = ({ siteTitle, menuLinks }) => {
 
   return (
     <StyledHeader background={background}>
-      <H1>{siteTitle}</H1>
+      <Link to="/">
+        <H1>{siteTitle}</H1>
+      </Link>
       <ul>
         {menuLinks.map(link => {
           return (
@@ -79,5 +81,9 @@ const StyledHeader = styled.nav`
         }
       }
     }
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 `
