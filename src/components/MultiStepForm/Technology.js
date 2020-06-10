@@ -1,5 +1,5 @@
 import React from 'react'
-import { GrGatsbyjs, GrWordpress } from 'react-icons/gr'
+import { GrGatsbyjs, GrWordpress, GrReactjs } from 'react-icons/gr'
 import { StyledForm } from "./StyledForm";
 import styled from 'styled-components'
 const ExtraFormStyle = styled.div`
@@ -29,6 +29,10 @@ const Technology = ({ setForm, navigation }) => {
                 <label>
                     <input name="technology" id="Gatsby" type="radio" value={"Gatsby"} onClick={setForm} />
                     <GrGatsbyjs />
+                </label>
+                <label>
+                    <input name="technology" id="React " type="radio" value={"React "} onClick={setForm} />
+                    <GrReactjs />
                 </label>
                 <label>
                     <input name="technology" id="Wordpress" type="radio" value={"Wordpress"} onClick={setForm} />
