@@ -9,7 +9,6 @@ const Submit = ({ navigation }) => {
       <StyledButtonsContainer>
         <button style={{ gridColumn: '1/-1' }} onClick={() => go("names")}>New Form</button>
       </StyledButtonsContainer>
-
     </>
   );
 };

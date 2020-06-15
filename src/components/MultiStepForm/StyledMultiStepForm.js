@@ -2,26 +2,35 @@ import styled from "styled-components"
 
 export const StyledMultiStepFormContainer = styled.section`
     height: calc(100vh - 3rem);
-    padding: 3rem;
-    display: grid;
-    align-items: center;
-    h3 {
-        font-size: 2.5rem;
+    padding:3rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    label {
+        text-transform: capitalize;
         font-weight: bold;
-        margin-bottom: 2rem;
+        margin: .5rem 0;
+    }
+    input {
+        border: 1px solid white;
+        border-radius: .5rem;
+        background-color: rgba(0,0,0,0.2);
+        padding: .5rem;
+        font-weight: bold;
     }
 `
 
 export const StyledButtonsContainer = styled.div`
-    margin-top: 1.5rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 `
 
 export const TESTFORMCONTAINER = styled.form`
-    outline: 1px dotted red;
-    height: 300px;
+    /* outline: 1px dotted red; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 `

@@ -6,18 +6,20 @@ const Address = ({ setForm, formData, navigation }) => {
   const { previous, next } = navigation;
 
   return (
-    <TESTFORMCONTAINER>
-      <label htmlFor="address">address</label>
-      <input type="text" name="address" id="address" value={address} onChange={setForm} />
-      <label htmlFor="city">city</label>
-      <input type="text" name="city" id="city" value={city} onChange={setForm} />
-      <label htmlFor="zip">zip</label>
-      <input type="text" name="zip" id="zip" value={zip} onChange={setForm} />
+    <>
+      <TESTFORMCONTAINER>
+        <label htmlFor="address">address</label>
+        <input type="text" name="address" id="address" value={address} onChange={setForm} />
+        <label htmlFor="city">city</label>
+        <input type="text" name="city" id="city" value={city} onChange={setForm} />
+        <label htmlFor="zip">zip</label>
+        <input type="text" name="zip" id="zip" value={zip} onChange={setForm} />
+      </TESTFORMCONTAINER>
       <StyledButtonsContainer>
         <button onClick={previous}>Previous</button>
         <button onClick={next}>Next</button>
       </StyledButtonsContainer>
-    </TESTFORMCONTAINER>
+    </>
   );
 };
 
