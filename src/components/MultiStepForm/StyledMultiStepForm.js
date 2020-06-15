@@ -13,11 +13,12 @@ export const StyledMultiStepFormContainer = styled.section`
         margin: .5rem 0;
     }
     input {
+        color: white;
         border: 1px solid white;
         border-radius: .5rem;
-        background-color: rgba(0,0,0,0.2);
+        background-color: rgba(0,0,0,0.3);
         padding: .5rem;
-        font-weight: bold;
+        font-size: 1.25rem;
     }
 `
 
