@@ -1,13 +1,12 @@
 import React from "react";
-import { StyledForm, StyledButtonsContainer } from "./StyledForm";
+import { StyledButtonsContainer, TESTFORMCONTAINER } from "../StyledMultiStepForm";
 
 const Address = ({ setForm, formData, navigation }) => {
   const { address, city, zip } = formData;
-
   const { previous, next } = navigation;
 
   return (
-    <StyledForm>
+    <TESTFORMCONTAINER>
       <label htmlFor="address">address</label>
       <input type="text" name="address" id="address" value={address} onChange={setForm} />
       <label htmlFor="city">city</label>
@@ -18,7 +17,7 @@ const Address = ({ setForm, formData, navigation }) => {
         <button onClick={previous}>Previous</button>
         <button onClick={next}>Next</button>
       </StyledButtonsContainer>
-    </StyledForm>
+    </TESTFORMCONTAINER>
   );
 };
 

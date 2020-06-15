@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledForm, StyledButtonsContainer } from "./StyledForm";
+import { StyledButtonsContainer, TESTFORMCONTAINER } from "../StyledMultiStepForm";
 
 const Names = ({ setForm, formData, navigation }) => {
   const { firstName, lastName } = formData;
@@ -8,7 +8,7 @@ const Names = ({ setForm, formData, navigation }) => {
 
 
   return (
-    <StyledForm>
+    <TESTFORMCONTAINER>
       <label htmlFor="firstName">firstName</label>
       <input type="text" name="firstName" id="firstName" value={firstName} onChange={setForm} />
       <label htmlFor="lastName">lastName</label>
@@ -17,7 +17,7 @@ const Names = ({ setForm, formData, navigation }) => {
         <button onClick={previous}>Previous</button>
         <button onClick={next}>Next</button>
       </StyledButtonsContainer>
-    </StyledForm>
+    </TESTFORMCONTAINER>
   );
 };
 

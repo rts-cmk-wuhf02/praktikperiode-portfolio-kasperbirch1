@@ -1,12 +1,12 @@
 import React from "react";
 import { useForm, useStep } from "react-hooks-helper";
 
-import Technology from "./Technology";
-import Names from "./Names";
-import Address from "./Address";
-import Contact from "./Contact";
-import Review from "./Review";
-import Submit from "./Submit";
+import Technology from "./steps/Technology";
+import Names from "./steps/Names";
+import Address from "./steps/Address";
+import Contact from "./steps/Contact";
+import Review from "./steps/Review";
+import Submit from "./steps/Submit";
 
 const steps = [
     { id: "technology" },

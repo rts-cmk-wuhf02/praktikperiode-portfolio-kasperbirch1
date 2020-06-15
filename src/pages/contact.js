@@ -1,9 +1,12 @@
 import React from 'react'
 import MultiStepForm from '../components/MultiStepForm/MultiStepForm'
+import { StyledMultiStepFormContainer } from '../components/MultiStepForm/StyledMultiStepForm'
 
 const Contact = () => {
     return (
-        <MultiStepForm />
+        <StyledMultiStepFormContainer>
+            <MultiStepForm />
+        </StyledMultiStepFormContainer>
     )
 }
 

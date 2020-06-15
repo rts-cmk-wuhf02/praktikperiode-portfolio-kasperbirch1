@@ -1,6 +1,4 @@
 import React from "react";
-import { StyledForm } from "./StyledForm";
-
 
 const Review = ({ setForm, formData, navigation }) => {
   const {
@@ -16,7 +14,7 @@ const Review = ({ setForm, formData, navigation }) => {
   const { go } = navigation;
 
   return (
-    <StyledForm>
+    <>
       <h3>Review your data</h3>
 
       <p>Technology: {technology}</p>
@@ -32,7 +30,7 @@ const Review = ({ setForm, formData, navigation }) => {
       <button onClick={() => go("contact")}>Edit</button>
 
       <button onClick={() => go("submit")}>Submit</button>
-    </StyledForm>
+    </>
   );
 };
 
