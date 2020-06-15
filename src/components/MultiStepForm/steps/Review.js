@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledButtonsContainer, TESTFORMCONTAINER } from "../StyledMultiStepForm";
+import { StyledButtonsContainer, StyledMultiStepForm } from "../StyledMultiStepForm";
 import styled from 'styled-components'
 const StyledSpan = styled.span`
     font-size: 1.25rem;   
@@ -26,7 +26,7 @@ const Review = ({ setForm, formData, navigation }) => {
 
   return (
     <>
-      <TESTFORMCONTAINER>
+      <StyledMultiStepForm>
         <h3>Review your data</h3>
 
         <h4>Technology:</h4>
@@ -44,7 +44,7 @@ const Review = ({ setForm, formData, navigation }) => {
         <h4>Contact:</h4>
         <StyledSpan>{phone} {email}</StyledSpan>
         <button onClick={() => go("contact")}>Edit</button>
-      </TESTFORMCONTAINER>
+      </StyledMultiStepForm>
       <StyledButtonsContainer>
         <button style={{ gridColumn: '1/-1' }} onClick={() => go("submit")}>Submit</button>
       </StyledButtonsContainer>

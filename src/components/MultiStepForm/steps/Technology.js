@@ -1,6 +1,6 @@
 import React from 'react'
 import { GrGatsbyjs, GrWordpress, GrReactjs } from 'react-icons/gr'
-import { StyledButtonsContainer, TESTFORMCONTAINER } from "../StyledMultiStepForm";
+import { StyledButtonsContainer, StyledMultiStepForm } from "../StyledMultiStepForm";
 import styled from 'styled-components'
 const ExtraFormStyle = styled.div`
     display: flex;
@@ -23,7 +23,7 @@ const Technology = ({ setForm, navigation }) => {
     const { next } = navigation;
     return (
         <>
-            <TESTFORMCONTAINER>
+            <StyledMultiStepForm>
                 <h3>Technology</h3>
                 <ExtraFormStyle>
                     <label htmlFor="Gatsby">
@@ -39,7 +39,7 @@ const Technology = ({ setForm, navigation }) => {
                         <GrWordpress />
                     </label>
                 </ExtraFormStyle>
-            </TESTFORMCONTAINER>
+            </StyledMultiStepForm>
             <StyledButtonsContainer>
                 <button style={{ gridColumn: '1/-1' }} onClick={next}>Next</button>
             </StyledButtonsContainer>

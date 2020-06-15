@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const StyledMultiStepFormContainer = styled.section`
+export const StyledMultiStepFormWrapper = styled.section`
     height: calc(100vh - 3rem);
     padding:3rem 1rem 1rem;
     display: flex;
@@ -27,7 +27,7 @@ export const StyledButtonsContainer = styled.div`
     grid-template-columns: repeat(2,1fr);
 `
 
-export const TESTFORMCONTAINER = styled.form`
+export const StyledMultiStepForm = styled.form`
     /* outline: 1px dotted red; */
     display: flex;
     flex-direction: column;
