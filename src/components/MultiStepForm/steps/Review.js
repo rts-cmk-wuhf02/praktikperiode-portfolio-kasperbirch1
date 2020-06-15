@@ -4,13 +4,12 @@ import styled from 'styled-components'
 const StyledSpan = styled.span`
     font-size: 1.25rem;   
     color: white;
-    margin-bottom: .5rem;
+    margin-bottom: .25rem;
     border: 1px solid white;
     border-radius: .5rem;
     background-color: rgba(0,0,0,0.2);
     padding: .5rem;
 `
-
 
 const Review = ({ setForm, formData, navigation }) => {
   const {
@@ -30,19 +29,19 @@ const Review = ({ setForm, formData, navigation }) => {
       <TESTFORMCONTAINER>
         <h3>Review your data</h3>
 
-        <label>Technology:</label>
+        <h4>Technology:</h4>
         <StyledSpan>{technology}</StyledSpan>
         <button onClick={() => go("technology")}>Edit</button>
 
-        <label>Name:</label>
+        <h4>Name:</h4>
         <StyledSpan>{`${firstName} ${lastName}`}</StyledSpan>
         <button onClick={() => go("names")}>Edit</button>
 
-        <label>Address:</label>
-        <StyledSpan>{`${address}, ${city}, ${zip}`}</StyledSpan>
+        <h4>Address:</h4>
+        <StyledSpan>{`${address}, ${zip} ${city}`}</StyledSpan>
         <button onClick={() => go("address")}>Edit</button>
 
-        <label>Contact:</label>
+        <h4>Contact:</h4>
         <StyledSpan>{phone} {email}</StyledSpan>
         <button onClick={() => go("contact")}>Edit</button>
       </TESTFORMCONTAINER>

@@ -24,6 +24,7 @@ const Technology = ({ setForm, navigation }) => {
     return (
         <>
             <TESTFORMCONTAINER>
+                <h3>Technology</h3>
                 <ExtraFormStyle>
                     <label htmlFor="Gatsby">
                         <input name="technology" id="Gatsby" type="radio" value={"Gatsby"} onClick={setForm} />

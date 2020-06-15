@@ -34,4 +34,18 @@ export const TESTFORMCONTAINER = styled.form`
     justify-content: center;
     height: 100%;
     width: 100%;
+
+    h3 {
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    h4 {
+        text-transform: capitalize;
+        font-size: 1.25rem;
+        font-weight: bold; 
+        margin-top: .75rem;
+    }
 `
