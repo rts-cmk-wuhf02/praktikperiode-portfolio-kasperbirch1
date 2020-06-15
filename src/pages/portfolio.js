@@ -45,7 +45,7 @@ const StyledPortfolioLink = styled.a`
 
 const PortfolioLink = ({ url, title, img, year, icon }) => {
     return (
-        <a href={url} target="_blank">
+        <StyledPortfolioLink href={url} target="_blank">
             <article>
                 <img src={img} alt={title} />
                 <div>
@@ -54,7 +54,7 @@ const PortfolioLink = ({ url, title, img, year, icon }) => {
                     <p>{year}</p>
                 </div>
             </article>
-        </a>
+        </StyledPortfolioLink>
     )
 }
 
