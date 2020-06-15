@@ -1,12 +1,17 @@
 import React from 'react'
 import { GrGatsbyjs, GrWordpress } from 'react-icons/gr'
 import styled from 'styled-components'
-const StyledUl = styled.ul`
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: .5rem;
+
+const StyledPortfolio = styled.section`
+    padding-top: 3rem;
+    ul {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: .5rem;
+    }
 `
+
 const StyledPortfolioLink = styled.a`
      text-decoration: none;
      color: inherit;
@@ -40,7 +45,7 @@ const StyledPortfolioLink = styled.a`
 
 const PortfolioLink = ({ url, title, img, year, icon }) => {
     return (
-        <StyledPortfolioLink href={url} target="_blank">
+        <a href={url} target="_blank">
             <article>
                 <img src={img} alt={title} />
                 <div>
@@ -49,16 +54,14 @@ const PortfolioLink = ({ url, title, img, year, icon }) => {
                     <p>{year}</p>
                 </div>
             </article>
-        </StyledPortfolioLink>
+        </a>
     )
 }
 
-
-
 const Portfolio = () => {
     return (
-        <section style={{ paddingTop: '3rem' }}>
-            <StyledUl>
+        <StyledPortfolio>
+            <ul>
                 <li>
                     <PortfolioLink icon={<GrGatsbyjs />} url="https://kb-uicomponent.netlify.app/" title="uicomponent" img="https://raw.githubusercontent.com/rts-cmk-opgaver/praktikperiode-uicomponents/master/hero.jpg?token=AL43SQVSK4Q24STVUEHIPCS65HDOA" year="2020" />
                 </li>
@@ -68,8 +71,8 @@ const Portfolio = () => {
                 <li>
                     <PortfolioLink icon={<GrWordpress />} url="https://limeandlemon.dk/" title="limeandlemon" img="https://limeandlemon.dk/wp-content/uploads/2017/04/dreamstime_xl_71982843-1024x682.jpg" year="2016" />
                 </li>
-            </StyledUl>
-        </section>
+            </ul>
+        </StyledPortfolio>
     )
 }
 
