@@ -9,11 +9,10 @@ const SecondPage = () => {
     setCurrentHeight(NewHeight)
   }, []);
 
-
   return (
     <>
       <SEO title="Page two" />
-      <section style={{ height: `calc(${currentHeight}px - 6rem)` }}>
+      <section style={{ minHeight: `calc(${currentHeight}px - 6rem)` }}>
         <h1>Hi from the second page</h1>
         {currentHeight}
         <p>Welcome to page 2</p>
