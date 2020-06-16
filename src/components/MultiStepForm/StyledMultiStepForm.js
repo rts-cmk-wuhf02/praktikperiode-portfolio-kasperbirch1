@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { breakpoints } from '../../theme/breakpoints'
 
 export const StyledMultiStepFormWrapper = styled.section`
     height: calc(100vh - 3rem);
@@ -19,6 +20,10 @@ export const StyledMultiStepFormWrapper = styled.section`
         background-color: rgba(0,0,0,0.3);
         padding: .5rem;
         font-size: 1.25rem;
+    }
+    @media ${breakpoints.sm} {
+        width: 40%;
+        margin: 0 auto;
     }
 `
 

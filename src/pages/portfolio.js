@@ -1,15 +1,19 @@
 import React from 'react'
 import { GrGatsbyjs, GrWordpress } from 'react-icons/gr'
+import { breakpoints } from '../theme/breakpoints'
 import styled from 'styled-components'
 
 const StyledPortfolio = styled.section`
-    padding-top: 3rem;
-    ul {
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-gap: .5rem;
-    }
+ @media ${breakpoints.sm} {
+    height: calc(100vh - 3rem);
+  }
+  padding-top: 3rem;
+  ul {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: .5rem;
+}
 `
 
 const StyledPortfolioLink = styled.a`
@@ -36,7 +40,7 @@ const StyledPortfolioLink = styled.a`
                 font-size: 1.25rem;  
             }
             h3 {
-             font-size: 1.5rem;
+             font-size: 1.25rem;
              font-weight: bold;
             }
         }
