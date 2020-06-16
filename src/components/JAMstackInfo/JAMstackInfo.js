@@ -1,6 +1,8 @@
 import React from 'react'
+import { breakpoints } from '../../theme/breakpoints'
 import styled from 'styled-components'
 const StyledJAMstackInfo = styled.section`
+    min-height: calc(100vh - 3rem);
     display: grid;
     grid-gap: 1rem;
     h2 {

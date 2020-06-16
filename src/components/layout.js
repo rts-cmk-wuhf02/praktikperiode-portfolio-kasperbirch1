@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
-      <main style={{ backgroundImage: 'url("https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>{children}</main>
+      <main style={{ paddingTop: '3rem', backgroundImage: 'url("https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>{children}</main>
       <Footer siteSlogan={data.site.siteMetadata.slogan} />
     </>
   )

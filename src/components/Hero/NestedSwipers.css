@@ -3,9 +3,8 @@
 }
 
 .swiper-container {
-  /* outline: red dotted 1px; */
   width: 100%;
-  height: calc(100vh - 3rem);
+  height: calc(100vh - 6rem);
 }
 
 .swiper-slide {
@@ -20,11 +19,5 @@
   width: .75rem;
 }
 
-.swiper-container-vertical {
-  /* color: green; */
-}
 
-.swiper-pagination-bullet {
-  /* background: green ; */
-}
 

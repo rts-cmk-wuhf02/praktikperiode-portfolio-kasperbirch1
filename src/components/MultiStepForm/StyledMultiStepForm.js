@@ -2,8 +2,8 @@ import styled from "styled-components"
 import { breakpoints } from '../../theme/breakpoints'
 
 export const StyledMultiStepFormWrapper = styled.section`
-    height: calc(100vh - 3rem);
-    padding:3rem 1rem 1rem;
+    height: calc(100vh - 6rem);
+    padding:0 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -1,6 +1,5 @@
 import React from 'react'
 import { TiArrowForwardOutline } from 'react-icons/ti'
-import { breakpoints } from '../../theme/breakpoints'
 import styled from 'styled-components'
 const StyledHomeSwipe = styled.article`
     padding: 1rem;
