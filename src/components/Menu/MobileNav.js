@@ -13,7 +13,7 @@ const MobileNavMenu = ({ siteTitle, menuLinks }) => {
   navRef.current = background
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 120
+      const show = window.scrollY > 50
       if (navRef.current !== show) {
         setBackground(show)
       }

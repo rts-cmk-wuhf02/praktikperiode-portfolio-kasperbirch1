@@ -1,6 +1,5 @@
 import React from 'react'
 import { GrGatsbyjs, GrWordpress } from 'react-icons/gr'
-import { breakpoints } from '../theme/breakpoints'
 import styled from 'styled-components'
 
 const StyledPortfolio = styled.section`
