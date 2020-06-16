@@ -14,9 +14,9 @@ const SecondPage = () => {
       <SEO title="Page two" />
       <section style={{ minHeight: `calc(${currentHeight}px - 6rem)` }}>
         <h1>Hi from the second page</h1>
-        {currentHeight}
         <p>Welcome to page 2</p>
         <Link to="/">Go back to the homepage</Link>
+        <h2 style={{ fontSize: '3rem', color: 'red', textAlign: 'center' }}>{`InnerHeight: ${currentHeight}`}</h2>
       </section>
     </>
   )

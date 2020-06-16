@@ -11,9 +11,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <section style={{ minHeight: `calc(${currentHeight}px - 6rem)` }}>
-        <NestedSwipers />
-      </section>
+      <NestedSwipers currentHeight={currentHeight} />
     </>
   )
 }

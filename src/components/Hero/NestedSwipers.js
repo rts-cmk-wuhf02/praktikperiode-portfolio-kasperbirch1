@@ -7,8 +7,9 @@ import { GrGatsbyjs } from 'react-icons/gr'
 import 'swiper/css/swiper.css';
 import '../Hero/NestedSwipers.css';
 
+const NestedSwipers = ({ currentHeight }) => {
+    console.log("currentHeight", currentHeight);
 
-const NestedSwipers = () => {
     const VerticalSwiperParams = {
         direction: 'vertical',
         pagination: {
