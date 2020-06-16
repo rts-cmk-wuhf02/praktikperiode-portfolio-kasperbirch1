@@ -1,19 +1,14 @@
 import React from 'react'
 import Swiper from 'react-id-swiper';
 import HomeSwipe from './HomeSwipe'
-import SkillSwipe from './SkillSwipe'
-import { TiHtml5 } from 'react-icons/ti'
-import { FaCss3Alt, FaReact } from 'react-icons/fa'
+import StyledSwipeIcon from './StyledSwipeIcon'
+import { FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa'
+import { GrGatsbyjs } from 'react-icons/gr'
 import 'swiper/css/swiper.css';
 import '../Hero/NestedSwipers.css';
 
+
 const NestedSwipers = () => {
-    // const HorizontalSwiperParams = {
-    //     pagination: {
-    //         el: '.swiper-pagination.swiper-pagination-h',
-    //         clickable: true
-    //     }
-    // };
     const VerticalSwiperParams = {
         direction: 'vertical',
         pagination: {
@@ -29,13 +24,15 @@ const NestedSwipers = () => {
             <section>
                 <Swiper {...VerticalSwiperParams}>
                     <section>
-                        <SkillSwipe icon={<TiHtml5 />} title="Html" />
+                        <StyledSwipeIcon icon={<FaHtml5 />} title="HTML" color="#e44d26" />
+                        <StyledSwipeIcon icon={<FaCss3Alt />} title="CSS" color="#264de4" />
+                        <StyledSwipeIcon icon={<FaJs />} title="JS" color="#ffde25" />
                     </section>
                     <section>
-                        <SkillSwipe icon={<FaCss3Alt />} title="CSS" />
+                        <StyledSwipeIcon icon={<FaReact />} title="React" color="#61dafb" />
                     </section>
                     <section>
-                        <SkillSwipe icon={<FaReact />} title="React" />
+                        <StyledSwipeIcon icon={<GrGatsbyjs />} title="Gatsby" color="#663399" />
                     </section>
                 </Swiper>
             </section>
