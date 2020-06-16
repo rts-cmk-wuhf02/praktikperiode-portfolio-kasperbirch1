@@ -7,6 +7,10 @@ module.exports = {
 
     menuLinks: [
       {
+        name: 'JAMstack',
+        link: 'jamstack'
+      },
+      {
         name: 'Portfolio',
         link: '/portfolio'
       },
