@@ -41,7 +41,7 @@ const SecondPage = () => {
           <StyledModal>
             <h3>Hej Modal</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed illo consequatur, beatae accusantium magnam dignissimos, quam ad inventore asperiores illum nemo voluptatibus mollitia alias a nostrum ipsum laboriosam quae dolore.</p>
-            <button onClick={() => setShowModal(!ShowModal)}>close modal</button>
+            <button onClick={() => setShowModal(!ShowModal)}>Close modal</button>
           </StyledModal>
           :
           null
