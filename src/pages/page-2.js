@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 
 const SecondPage = () => {
   useEffect(() => {
-    window.addEventListener('orientationchange', () => {
+    window.addEventListener('resize', () => {
       document.querySelector(':root').style.setProperty('--vh', window.innerHeight + 'px');
     })
 
