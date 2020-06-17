@@ -6,7 +6,11 @@ const SecondPage = () => {
   const [currentHeight, setCurrentHeight] = useState(0);
   useEffect(() => {
     let NewHeight = window.innerHeight
-    window.addEventListener('orientationchange', setCurrentHeight(NewHeight));
+    window.addEventListener("orientationchange", function () {
+      if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+        setCurrentHeight(NewHeight)
+      }
+    }, false);
 
   }, []);
 
