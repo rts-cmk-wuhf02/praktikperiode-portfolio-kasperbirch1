@@ -88,7 +88,7 @@ export const GlobalStyle = createGlobalStyle`
   ${reset}
 
   :root {
-    --vh: 100vh;
+    --vh: calc(100vh - 6rem);
   }
 
   *, *:before, *:after {
