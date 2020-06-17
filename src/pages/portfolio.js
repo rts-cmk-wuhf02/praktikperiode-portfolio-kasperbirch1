@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { GrGatsbyjs, GrWordpress } from 'react-icons/gr'
 import styled from 'styled-components'
 import { portfolie } from '../content/portfolieLinks'
 
@@ -69,8 +68,6 @@ const PortfolioLink = ({ url, title, img, year, icon, description }) => {
 }
 
 const Portfolio = () => {
-    console.log("portfolie", portfolie);
-
     return (
         <StyledPortfolio>
             <ul>
@@ -78,7 +75,7 @@ const Portfolio = () => {
                     portfolie.map((item, index) => {
                         return (
                             <li key={index}>
-                                <PortfolioLink icon={item.icon} url={item.url} title={item.title} img={item.url} year={item.year} description={item.description} />
+                                <PortfolioLink icon={item.icon} url={item.url} title={item.title} img={item.img} year={item.year} description={item.description} />
                             </li>
                         )
                     })
@@ -102,7 +99,6 @@ const StyledModal = styled.section`
   background-color: rgba(0,0,0,.5);
   display: grid;
   place-content: center;
-  padding: 3rem;
   color: white;
   h3 {
     font-size: 2.25rem;
