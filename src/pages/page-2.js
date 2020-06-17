@@ -6,9 +6,7 @@ const SecondPage = () => {
   const [currentHeight, setCurrentHeight] = useState(0);
   useEffect(() => {
     let NewHeight = window.innerHeight
-   
-
-window.addEventListener('resize', setCurrentHeight(NewHeight));
+    window.addEventListener('orientationchange', setCurrentHeight(NewHeight));
 
   }, []);
 
