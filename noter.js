@@ -19,26 +19,5 @@ const data = useStaticQuery(graphql`
   `);
 
 
-  // import React, { useEffect, useState } from "react"
 
 
-/*
-const [currentHeight, setCurrentHeight] = useState(0);
-  useEffect(() => {
-    let NewHeight = window.innerHeight
-    window.addEventListener("orientationchange", function () {
-      if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
-        setCurrentHeight(NewHeight)
-      }
-    }, false);
-
-  }, [NewHeight]);
-
-
-      <section style={{ minHeight: `calc(${currentHeight}px - 6rem)` }}>
-
-      </section>
-
-
-
-*/
