@@ -1,14 +1,8 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 const SecondPage = () => {
-  useEffect(() => {
-    window.addEventListener('resize', () => {
-      document.querySelector(':root').style.setProperty('--vh', window.innerHeight + 'px');
-    })
-
-  }, []);
   return (
     <>
       <SEO title="Page two" />
