@@ -4,6 +4,7 @@ import NestedSwipers from '../components/Hero/NestedSwipers'
 
 const IndexPage = () => {
   useEffect(() => {
+    // set screen size to a root variable called --vh and listen for a resize event
     document.querySelector(':root').style.setProperty('--vh', window.innerHeight + 'px');
     window.addEventListener('resize', () => {
       document.querySelector(':root').style.setProperty('--vh', window.innerHeight + 'px');

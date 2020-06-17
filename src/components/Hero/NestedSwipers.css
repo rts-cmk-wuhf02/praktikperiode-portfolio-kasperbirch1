@@ -4,7 +4,7 @@
 
 .swiper-container {
   width: 100%;
-  height: calc(100vh - 6rem);
+  height: calc(var(--vh) - 6rem);
 }
 
 .swiper-slide {
