@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 const SecondPage = () => {
-  const [currentHeight, setCurrentHeight] = useState(0);
+  const [currentHeight, setCurrentHeight] = useState(window.innerHeight);
   useEffect(() => {
     let NewHeight = window.innerHeight
     window.addEventListener("orientationchange", function () {
