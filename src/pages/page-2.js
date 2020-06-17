@@ -22,10 +22,8 @@ const StyledModal = styled.section`
     margin: 1rem 0;
   }
 `
-
 const SecondPage = () => {
   const [ShowModal, setShowModal] = useState(false);
-  console.log("ShowModal", ShowModal);
 
   return (
     <>

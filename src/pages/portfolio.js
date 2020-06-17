@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GrGatsbyjs, GrWordpress } from 'react-icons/gr'
 import styled from 'styled-components'
+import { portfolie } from '../content/portfolieLinks'
 
 const StyledPortfolio = styled.section`
     min-height: calc(var(--vh) - 6rem);
@@ -12,68 +13,102 @@ const StyledPortfolio = styled.section`
     }
 `
 
-const StyledPortfolioLink = styled.a`
-     text-decoration: none;
-     color: inherit;
-     article {
-         padding: .5rem;
-         border-radius: .5rem;
-         background-color: white;
-         img {
-             border-radius: .5rem;
-             display: block;
-             height: 200px;
-             width: 100%;
-             object-fit: cover;
-             object-position: center;
-        }
-        div {
-            padding: .25rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            svg {
-                font-size: 1.25rem;  
-            }
-            h3 {
-             font-size: 1.25rem;
-             font-weight: bold;
-            }
-        }
+const StyledPortfolioArticle = styled.article`
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: white;
+    img {
+        border-radius: .5rem;
+        display: block;
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+}
+div {
+    padding: .25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+        font-size: 1.25rem;  
     }
+    h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+}
 `
 
-const PortfolioLink = ({ url, title, img, year, icon }) => {
+const PortfolioLink = ({ url, title, img, year, icon, description }) => {
+    const [ShowModal, setShowModal] = useState(false);
+
     return (
-        <StyledPortfolioLink href={url} target="_blank">
-            <article>
+        <>
+            <StyledPortfolioArticle onClick={() => setShowModal(!ShowModal)}>
                 <img src={img} alt={title} />
                 <div>
                     {icon}
                     <h3>{title}</h3>
                     <p>{year}</p>
                 </div>
-            </article>
-        </StyledPortfolioLink>
+            </StyledPortfolioArticle>
+            {
+                ShowModal ?
+                    <StyledModal>
+                        <h3>{title}</h3>
+                        <p>{description}</p>
+                        <a href={url} target="_blank">Link to site</a>
+                        <button onClick={() => setShowModal(!ShowModal)}>Close modal</button>
+                    </StyledModal>
+                    :
+                    null
+            }
+        </>
     )
 }
 
 const Portfolio = () => {
+    console.log("portfolie", portfolie);
+
     return (
         <StyledPortfolio>
             <ul>
-                <li>
-                    <PortfolioLink icon={<GrGatsbyjs />} url="https://kb-uicomponent.netlify.app/" title="uicomponent" img="https://github.com/rts-cmk-wuhf02/praktikperiode-uicomponent-kasperbirch1/blob/master/src/images/hero.jpg?raw=true" year="2020" />
-                </li>
-                <li>
-                    <PortfolioLink icon={<GrGatsbyjs />} url="https://yscn.netlify.app/" title="yscn" img="https://scontent-cph2-1.xx.fbcdn.net/v/t1.0-9/61635763_2039231459719593_2924034015952371712_o.jpg?_nc_cat=104&_nc_sid=730e14&_nc_ohc=gx_mPjFkyBoAX_hmiF0&_nc_ht=scontent-cph2-1.xx&oh=c7abee3933a7f1109c31ebcb937c2fd1&oe=5EEE6E3B" year="2020" />
-                </li>
-                <li>
-                    <PortfolioLink icon={<GrWordpress />} url="https://limeandlemon.dk/" title="limeandlemon" img="https://limeandlemon.dk/wp-content/uploads/2017/04/dreamstime_xl_71982843-1024x682.jpg" year="2016" />
-                </li>
+                {
+                    portfolie.map((item, index) => {
+                        return (
+                            <li key={index}>
+                                <PortfolioLink icon={item.icon} url={item.url} title={item.title} img={item.url} year={item.year} description={item.description} />
+                            </li>
+                        )
+                    })
+                }
             </ul>
         </StyledPortfolio>
     )
 }
 
 export default Portfolio
+
+
+
+const StyledModal = styled.section`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  background-color: rgba(0,0,0,.5);
+  display: grid;
+  place-content: center;
+  padding: 3rem;
+  color: white;
+  h3 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+  button {
+    margin: 1rem 0;
+  }
+`
